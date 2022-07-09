@@ -1,0 +1,102 @@
+section{
+    min-height: 100vh;
+    background-image: url(../alTIQo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasks-box{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    min-height: 40vh;
+}
+.input-groub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+input,.icon{
+    height: 3rem;
+}
+input{
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.icon{
+    background-color: rgb(255, 192, 203);
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+
+.task{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 2px;
+}
+
+.task p{
+    width: fit-content;
+    position: relative;
+    font-weight: bold;
+    height: 2.5rem;
+    padding: 5px 10px;
+    word-break: break-all;
+}
+.completed::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    height: 2px;
+    background-color: red;
+    width: 100%;
+    animation: completed 1s linear;
+}
+.dark-them{
+    opacity: 0.5;
+}
+.task-icon{
+    display: flex;
+}
+.task i{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+.done{
+    background-color: greenyellow;
+}
+.del{
+background-color: rgba(255, 192, 203, 0.916);
+}
+@keyframes completed {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
