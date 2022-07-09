@@ -33,7 +33,7 @@ input{
 }
 .icon{
     background-color: rgb(255, 192, 203);
-    width: 3rem;
+    min-width: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,16 +48,15 @@ input{
    align-items: center;
    justify-content: space-between;
    border-radius: 2px;
-   overflow: auto;
 }
 
 .task p{
-    width: fit-content;
+    max-width: 75%;
     position: relative;
-    height: 2.5rem;
+    min-height: 2.5rem;
     font-weight: bold;
     padding: 5px 10px;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 .completed::after{
     position: absolute;
@@ -67,7 +66,7 @@ input{
     left: 5px;
     height: 2px;
     background-color: red;
-    width: 100%;
+    width: 98%;
     animation: completed 1s linear;
 }
 .dark-them{
@@ -98,6 +97,6 @@ background-color: rgba(255, 192, 203, 0.916);
         width: 0;
     }
     to{
-        width: 100%;
+        width: 98%;
     }
 }
