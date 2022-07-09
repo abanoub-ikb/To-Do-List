@@ -48,13 +48,14 @@ input{
    align-items: center;
    justify-content: space-between;
    border-radius: 2px;
+   overflow: auto;
 }
 
 .task p{
     width: fit-content;
     position: relative;
-    font-weight: bold;
     height: 2.5rem;
+    font-weight: bold;
     padding: 5px 10px;
     word-break: break-all;
 }
